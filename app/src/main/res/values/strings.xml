@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Bodeguin</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="message">¿Desea mostrar las imágenes?</string>
+
+    <string name="large_text">El pedido realizado estará listo para el recojo a las 8:00am</string>
+    <string name="item_reply">Reply</string>
+    <string name="item_forward">Forward</string>
+    <string name="item_delete">Delete</string>
+
+    <string name="lbEmail">Correo</string>
+    <string name="lbPassword">Contraseña</string>
+
+    <string name="item_account">Account</string>
+    <string name="item_favorite">Favorite</string>
+    <string name="item_home">Home</string>
+</resources>

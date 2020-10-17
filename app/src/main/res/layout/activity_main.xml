@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.drawer.WearableDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dlNavigation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:boxedEdges="all"
+        tools:ignore="MissingPrefix">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|top"
+            android:src="@drawable/logo_bodeguin" />
+
+        <ScrollView
+            android:id="@+id/svContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Productos"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pan"
+                        android:background="@color/white"
+                        android:padding="2dp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"/>
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/leche"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:background="@color/white"
+                        android:padding="2dp"/>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"/>
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/mantequilla"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:background="@color/white"
+                        android:padding="2dp"/>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"/>
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/cafe"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:background="@color/white"
+                        android:padding="2dp"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/ibNotificationCheck"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|left"
+        android:background="@null"
+        android:src="@android:drawable/ic_dialog_email" />
+
+    <ImageButton
+        android:id="@+id/ibNotificationSync"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:background="@null"
+        android:src="@android:drawable/ic_menu_mylocation" />
+
+
+    <androidx.wear.widget.drawer.WearableNavigationDrawerView
+        android:id="@+id/wnTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:navigationStyle="multiPage" />
+
+
+
+
+</androidx.wear.widget.drawer.WearableDrawerLayout>
